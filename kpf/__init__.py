@@ -1,6 +1,7 @@
 import click
 import google.auth
 
+
 def get_project_id() -> str:  # type: ignore
     _, project_id = google.auth.default()
     if not project_id:
